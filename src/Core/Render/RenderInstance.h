@@ -5,11 +5,10 @@
 
 class RenderInstance{
   public:
-    RenderInstance(const char* app_name);
+    RenderInstance();
     ~RenderInstance();
 
   private:
-    const char* APPLICATION_NAME;
     VkInstance instance;
     void createInstance();
 

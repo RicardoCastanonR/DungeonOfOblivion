@@ -1,7 +1,6 @@
 #include "RenderInstance.h"
 
-RenderInstance::RenderInstance(const char* app_name){
-    APPLICATION_NAME = app_name;
+RenderInstance::RenderInstance(){
     createInstance();
     std::cout << "Instance created successfully!" << std::endl;
 }

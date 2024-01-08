@@ -5,13 +5,13 @@
 
 class WindowManager {
   public:
-    WindowManager(const int& WIDTH, const int& HEIGHT, const char* WindowName);
+    WindowManager();
     ~WindowManager();
 
     GLFWwindow* getWindow();
   private:
     GLFWwindow* window;
-    void initWindow(const int& WIDTH, const int& HEIGHT, const char* WindowName);
+    void initWindow();
 };
 
 #endif

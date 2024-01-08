@@ -8,11 +8,11 @@ void Application::run(){
 }
 
 void Application::initWindow(){
-    windowManager = new WindowManager(WIDTH, HEIGHT, APPLICATION_NAME);
+    windowManager = new WindowManager();
 }
 
 void Application::initVulkan(){
-    renderInstance = new RenderInstance(APPLICATION_NAME);
+    renderInstance = new RenderInstance();
 }
 
 void Application::mainLoop(){

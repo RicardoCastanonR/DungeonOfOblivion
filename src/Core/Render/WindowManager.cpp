@@ -1,7 +1,7 @@
 #include "WindowManager.h"
 
-WindowManager::WindowManager(const int& WIDTH, const int& HEIGHT, const char* WindowName) {
-    initWindow(WIDTH, HEIGHT, WindowName);
+WindowManager::WindowManager() {
+    initWindow();
 }
 
 WindowManager::~WindowManager() {
@@ -14,11 +14,11 @@ GLFWwindow* WindowManager::getWindow() {
     return window;
 }
 
-void WindowManager::initWindow(const int& WIDTH, const int& HEIGHT, const char* WindowName){
+void WindowManager::initWindow(){
     glfwInit();
     
     glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
     glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
-    window = glfwCreateWindow(WIDTH, HEIGHT, WindowName, nullptr, nullptr);
+    window = glfwCreateWindow(WIDTH, HEIGHT, APPLICATION_NAME, nullptr, nullptr);
 }
