@@ -4,8 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/engine/src/*",
-                "${workspaceFolder}/engine/src/Ludi/*",
+                "${workspaceFolder}/src/Core"
                 "${VULKAN_SDK}/include",
                 "${workspaceFolder}/vendor/includes"
             ],
